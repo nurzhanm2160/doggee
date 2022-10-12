@@ -1,21 +1,45 @@
-.login__page {
+.page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.login__page__container {
+.container {
     background: #ffffff;
     box-shadow: 0px 4px 50px 2px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 }
 
-.login__page__form__container {
-    padding: 0 100px;
+.header_container {
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 16px;
+    font-size: 40px;
+    width: 100%;
+    background-color: #f5c678;
+    margin-bottom: 83px;
 }
 
-.login__page__input_container {
+.form_container {
+    padding: 0 100px;
+    margin-bottom: 83px;
+}
+
+.input_container {
     margin-bottom: 10px;
     height: 100%;
+}
+
+.signUpContainer {
+    font-weight: 600;
+    font-size: 12px;
+    color: #f5c678;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
 }

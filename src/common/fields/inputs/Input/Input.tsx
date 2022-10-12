@@ -7,10 +7,11 @@ interface InputProps extends HTMLProps<HTMLInputElement> {
 }
 
 export const Input: FC<InputProps> = ({ isError = false, helperText, ...props }) => {
+    const errorInputStyle = `${styles.input} ${styles.error}`;
     return (
         <>
-            <input className={isError ? styles.input__error : styles.input} {...props} />
-            {isError && helperText && <div className={styles.input__helper_text}>{helperText}</div>}
+            <input className={isError ? errorInputStyle : styles.input} {...props} />
+            {isError && helperText && <div className={styles.inputHelperText}>{helperText}</div>}
         </>
     );
 };

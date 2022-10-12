@@ -3,19 +3,33 @@
     border-radius: 5px;
     border: none;
     padding: 10px;
+    width: 100%;
+    color: #000000;
+    font-size: 12px;
 }
 
 .input::placeholder {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.input__error {
-    background: rgba(219, 57, 57, 0.3);
-    border: none;
-    border-radius: 5px;
+.input:active,
+.input:focus {
+    outline: none;
+    caret-color: #000000;
 }
 
-.input__helper_text {
+.input:hover {
+    background-color: #ededed;
+}
+
+.error {
+    background: rgba(219, 57, 57, 0.3);
+}
+.error:hover {
+    background: rgba(219, 57, 57, 0.3);
+}
+
+.inputHelperText {
     font-weight: 300;
     font-size: 10px;
     padding-left: 10px;
